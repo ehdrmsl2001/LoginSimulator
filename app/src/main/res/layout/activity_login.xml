@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="16dp"
+        android:background="@null"
+        android:src="@drawable/ic_present" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/ic_person" />
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:text="LOGIN"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="or"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_darkblue"
+        android:text="LOGIN WITH FACEBOOK"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            android:gravity="center"
+            android:text="FORGOT?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            android:gravity="center"
+            android:text="CREATE" />
+    </LinearLayout>
+</LinearLayout>
